@@ -1,0 +1,60 @@
+{
+  "signup": {
+    "title": "Sign Up",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "continue": "Continue",
+    "emailError": "Enter a valid email",
+    "terms": "I accept the Terms and Conditions",
+    "allFieldsRequired":"All fields are required.",
+    "nameValid":"Name must be atleast 4 characters long",
+    "nameLettersOnly": "Name must only contain letters",
+    "emailValid":"Enter a valid email address.",
+    "passwordValid":"Password must be at least 6 characters long.",
+    "passwordMismatch":"Passwords doesn't match"
+  },
+  "login": {
+    "title":"Welcome",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember Me",
+    "forgotPassword": "Forgot Password",
+    "signupText": "Don't have an account? ",
+    "continue":"Continue",
+    "allFieldsRequired":"All fields are required.",
+    "emailValid":"Enter a valid email address.",
+    "passwordValid":"Password must be at least 6 characters long."
+  },
+  "otp": {
+    "title": "Verification",
+    "instruction": "We have sent an OTP to the entered mail ID.",
+    "enterOtp": "Enter OTP",
+    "resend": "Resend",
+    "timer": "Time Remaining: ",
+    "verify": "Verify"
+  },
+  "verified": {
+    "title": "Congratulations!",
+    "message": "Your account has been created successfully. Now you can sign in with your sign-in credentials.",
+    "button": "Continue"
+  },
+  "errors": {
+    "invalidPassword": "Invalid password",
+    "userNotFound": "User not found with this email.",
+    "userAlreadyExists": "User already exists with this email.",
+    "invalidOtp": "Invalid OTP.",
+    "internalServerError": "Internal server error. Please try again later."
+  },
+  "success":{
+    "loginSuccess": "Login completed successfully!",
+    "otpSent": "OTP sent to your email successfully!",
+    "userCreated": "User registered successfully!"
+  },
+  "logout":{
+    "confirmText":"Are you sure want to logout?",
+    "cancel":"Cancel",
+    "logout":"Logout"
+  }
+}

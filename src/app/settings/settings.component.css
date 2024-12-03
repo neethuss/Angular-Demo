@@ -1,0 +1,76 @@
+.settings-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 1000;
+  padding: 10px;.settings-container {
+  position: fixed;
+  top: 0;
+  right: 10px; 
+  z-index: 1000;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.settings-icon {
+  cursor: pointer;
+}
+
+.settings-icon img {
+  width: 30px; 
+  height: 30px; 
+  transition: transform 0.3s ease; 
+}
+
+.settings-icon:hover img {
+  transform: scale(1.1); 
+}
+
+.settings-menu {
+  position: absolute;
+  top: 40px;
+  right: 0; 
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.language-settings, .theme-settings {
+  margin: 0; 
+}
+
+.language-settings label,
+.theme-settings label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px; 
+}
+
+.language-settings select,
+.theme-settings select {
+  width: 100%; 
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: transparent;
+  outline: none;
+}
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+
+.language-settings, .theme-settings {
+  margin: 5px;
+}

@@ -1,0 +1,26 @@
+<div class="settings-container">
+  <div class="settings-icon" (click)="toggleSettingsMenu()">
+    <img src="/settings.png" alt="Settings Icon">
+  </div>
+
+  <div class="settings-menu" *ngIf="isSettingsMenuVisible">
+    <div class="language-settings">
+      <label for="language">Select Language:</label>
+      <select id="language" (change)="onLanguageChange($event)" [value]="selectedLanguage">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="ml">മലയാളം</option>
+        <option value="hi">हिन्दी</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+
+    <div class="theme-settings">
+      <label for="theme">Select Theme:</label >
+      <select id="theme" (change)="onThemeChange($event)"[value]="selectedTheme">
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+    </div>
+  </div>
+</div>

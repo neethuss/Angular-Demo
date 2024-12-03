@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="header">
+    <h1>{{'login.title' | translate}}</h1>
+  </div>
+
+  <div *ngIf="showCommonError" class="error-message">
+    <span>{{ 'login.allFieldsRequired' | translate }}</span>
+  </div>
+  <form action="" class="form"  [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    
+    <div class="input-container">
+      <div class="input-group">
+        <label for="email">{{ 'login.email' | translate }}</label>
+        <input type="email" id="email" name="email" formControlName="email" />
+        <div *ngIf="isControlInvalid('email')" class="error-message">
+          <span *ngIf="loginForm.get('email')?.errors?.['email']">{{ 'login.emailValid' | translate }}</span>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="password">{{ 'login.password' | translate }}</label>
+        <input type="password" id="password" name="password" formControlName="password"  />
+        <div *ngIf="isControlInvalid('password')" class="error-message">
+          <span *ngIf="loginForm.get('password')?.errors?.['minlength']">
+            {{ 'login.passwordValid' | translate }}
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="checkbox-container">
+      <label>
+        <input type="checkbox"  />
+        {{ 'login.rememberMe' | translate }}
+      </label>
+      <a href="#">{{ 'login.forgotPassword' | translate }}</a>
+    </div>
+
+    <p class="signup-text">
+      {{ 'login.signupText' | translate }}<a [href]="'/' + lang +'/'+ theme + '/signup'">{{ 'signup.title' | translate }}</a>
+    </p>
+
+    <button type="submit" class="submit-button">{{ 'login.continue' | translate }}</button>  </form>
+</div>

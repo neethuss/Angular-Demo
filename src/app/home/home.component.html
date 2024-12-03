@@ -1,0 +1,4 @@
+<img src="/home.png" alt="home" width="50%" style="display: block; margin: 0 auto;">
+<button class="logout-button" (click)="logout()">{{'logout.logout' | translate}}</button>
+
+<app-logoutmodal *ngIf="showLogoutModal" (cancel)="onCancelLogout()"></app-logoutmodal>

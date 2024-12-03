@@ -1,0 +1,55 @@
+{
+  "signup": {
+    "title": "S'inscrire",
+    "name": "Nom",
+    "email": "Email",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmez le mot de passe",
+    "continue": "Continuer",
+    "emailError": "Entrez un email valide",
+    "terms": "J'accepte les termes et conditions",
+    "allFieldsRequired": "Tous les champs sont obligatoires.",
+    "nameValid": "Le nom doit comporter au moins 4 caractères.",
+    "nameLettersOnly": "Le nom doit contenir uniquement des lettres",
+    "emailValid": "Veuillez entrer une adresse email valide.",
+    "passwordValid": "Le mot de passe doit comporter au moins 6 caractères."
+  },
+
+  "login": {
+    "title": "Bienvenue",
+    "email": "Email",
+    "password": "Mot de passe",
+    "rememberMe": "Souviens-toi de moi",
+    "forgotPassword": "Mot de passe oublié?",
+    "signupText": "Vous n'avez pas de compte? ",
+    "continue": "Continuer",
+    "allFieldsRequired": "Tous les champs sont obligatoires.",
+    "emailValid": "Entrez une adresse e-mail valide.",
+    "passwordValid": "Le mot de passe doit comporter au moins 6 caractères."
+  },
+  "otp": {
+    "title": "Vérification",
+    "instruction": "Nous avons envoyé un OTP à l'e-mail fourni.",
+    "enterOtp": "Entrez l'OTP",
+    "resend": "Renvoyer",
+    "timer": "Temps restant : ",
+    "verify": "Vérifier"
+  },
+  "verified": {
+    "title": "Félicitations !",
+    "message": "Votre compte a été créé avec succès. Vous pouvez maintenant vous connecter avec vos identifiants.",
+    "button": "Continuer"
+  },
+  "errors": {
+    "invalidPassword": "Mot de passe invalideyy",
+    "userNotFound": "Aucun utilisateur trouvé avec cet e-mail.",
+    "userAlreadyExists": "L'utilisateur existe déjà avec cet e-mail.",
+    "invalidOtp": "OTP invalide.",
+    "internalServerError": "Erreur interne du serveur. Veuillez réessayer plus tard."
+  },
+  "logout":{
+    "confirmText":"Êtes-vous sûr de vouloir vous déconnecter ?",
+    "cancel":"Annuler",
+    "logout":"Se déconnecter"
+  }
+}

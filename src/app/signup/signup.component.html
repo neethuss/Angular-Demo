@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="header">
+    <button class="back-button" (click)="back()">&#8592;</button>
+    <h1>{{'signup.title' | translate}}</h1>
+  </div>
+
+  <div *ngIf="showCommonError" class="error-message">
+    <span>{{ 'signup.allFieldsRequired' | translate }}</span>
+  </div>
+  <form class="form" [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    
+    <div class="input-container">
+      <div class="input-group">
+        <label for="name">{{'signup.name' | translate}}</label>
+        <input type="text" id="name" formControlName="name" />
+        <div *ngIf="isControlInvalid('name')" class="error-message">
+          <span *ngIf="signupForm.get('name')?.errors?.['minlength']">{{ 'signup.nameValid' | translate }}</span>
+          <span *ngIf="signupForm.get('name')?.errors?.['pattern']">
+            {{ 'signup.nameLettersOnly' | translate }}
+          </span>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="email">{{'signup.email' | translate}}</label>
+        <input type="email" id="email" formControlName="email" />
+        <div *ngIf="isControlInvalid('email')" class="error-message">
+          <span *ngIf="signupForm.get('email')?.errors?.['email']">{{ 'signup.emailValid' | translate }}</span>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="password">{{'signup.password' | translate}}</label>
+        <input type="password" id="password" formControlName="password" />
+        <div *ngIf="isControlInvalid('password')" class="error-message">
+          <span *ngIf="signupForm.get('password')?.errors?.['minlength']">
+            {{ 'signup.passwordValid' | translate }}
+          </span>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="confirmPassword">{{'signup.confirmPassword' | translate}}</label>
+        <input type="password" id="confirmPassword" formControlName="confirmPassword" />
+        <div *ngIf="signupForm.errors?.['passwordsMismatch']" class="error-message">
+          <span>{{ 'signup.passwordMismatch' | translate }}</span>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="checkbox-container">
+      <label>
+        <input type="checkbox" />
+        {{'signup.terms' | translate}}
+      </label>
+    </div>
+
+    <button type="submit" class="submit-button">{{'signup.continue' | translate}}</button>
+  </form>
+</div>

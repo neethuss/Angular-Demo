@@ -1,1 +1,315 @@
-/* You can add global styles to this file, and also import other style files */
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+
+body.blue-theme {
+  margin: 0;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #acbafa;
+  font-family: Arial, sans-serif;
+}
+
+body.green-theme {
+  margin: 0;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aafcb8;
+  font-family: Arial, sans-serif;
+}
+
+body.blue-theme .container {
+  width: 425px;
+  max-width:500px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+body.green-theme .container {
+  width: 425px;
+  max-width: 600px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+body.blue-theme .header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+body.green-theme .header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+body.blue-theme .back-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+body.green-theme .back-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+body.blue-theme h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+}
+
+body.green-theme h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+body.blue-theme .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+body.green-theme .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+body.blue-theme .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+body.green-theme .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+body.blue-theme .input-group label {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+body.green-theme .input-group label {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+body.blue-theme .input-group input {
+  width: 94%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+body.green-theme .input-group input {
+  width: 94%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+body.blue-theme a{
+  color: rgb(54, 83, 214);
+}
+
+body.green-theme a{
+  color: rgb(27, 192, 27);
+}
+
+body.blue-theme .input-group input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+body.green-theme .input-group input:focus {
+  outline: none;
+  border-color: #15cc2e;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+body.blue-theme span {
+  font-size: 0.8rem;
+  color: red;
+  margin-top: 5px;
+}
+
+body.green-theme span {
+  font-size: 0.8rem;
+  color: red;
+  margin-top: 5px;
+}
+
+
+body.blue-theme .checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+body.green-theme .checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+body.blue-theme .terms-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+body.green-theme .terms-link {
+  color: #1fd64d;
+  text-decoration: none;
+}
+
+body.blue-theme .terms-link:hover {
+  text-decoration: underline;
+}
+
+body.green-theme .terms-link:hover {
+  text-decoration: underline;
+}
+
+body.blue-theme .submit-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #000080; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+body.green-theme .submit-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #009625; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+body.blue-theme .submit-button:disabled {
+  background-color: #a9a9a9;
+  cursor: not-allowed; 
+  opacity: 0.6; 
+}
+
+body.green-theme .submit-button:disabled {
+  background-color: #a9a9a9;
+  cursor: not-allowed; 
+  opacity: 0.6; 
+}
+
+body.blue-theme .submit-button:hover {
+  background-color: #0000cd; 
+}
+
+body.green-theme .submit-button:hover {
+  background-color: #09cc3a; 
+}
+
+body.blue-theme .logout-button {
+  width: 20%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #000080; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block; margin: 0 auto;
+}
+
+body.green-theme .logout-button {
+  width:20%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #009625; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block; margin: 0 auto;
+}
+
+body.blue-theme .submit-logout:hover {
+  background-color: #0000cd; 
+}
+
+body.green-theme .logout-button:hover {
+  background-color: #09cc3a; 
+}
+
+
+@media (max-width: 480px) {
+  body.blue-theme .container {
+    padding: 10px;
+  }
+}
+
+body.blue-theme .toast-top-full-width, body.green-theme .toast-top-full-width {
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 1050; 
+  border-radius: 0; 
+  max-width: 100%;
+  text-align: center; 
+}
+
+body.blue-theme .toast, body.green-theme .toast {
+  padding: 15px; 
+  font-size: 1rem; 
+}
